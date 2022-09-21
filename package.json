@@ -11,7 +11,6 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
     "core-js": "^3.6.5",
-    "sass": "^1.54.9",
     "sweetalert2": "^11.4.33",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
@@ -26,6 +25,8 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.54.9",
+    "sass-loader": "^10.3.1"
   }
 }
