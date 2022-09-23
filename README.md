@@ -11,5 +11,5 @@ npm run build
 ```
 
 ### Enlace en producción
-[[https://galeria.mitziweb.com](https://galeria.mitziweb.com)]
+[https://galeria.mitziweb.com](https://galeria.mitziweb.com)
 
