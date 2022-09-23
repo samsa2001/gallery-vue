@@ -1,24 +1,15 @@
 # gallery
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
+### Compilación en local
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilación en producción
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Enlace en producción
+[[https://galeria.mitziweb.com](https://galeria.mitziweb.com)]
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

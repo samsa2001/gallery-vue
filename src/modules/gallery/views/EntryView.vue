@@ -32,23 +32,21 @@
         </div>
 
         <hr>
-        <div class="d-flex flex-column px-3">
-            <img 
-                v-if="entry.picture && !localImage"
-                :src="entry.picture" 
-                alt="entry-picture"
-                class="img-thumbnail">
+        <img 
+            v-if="entry.picture && !localImage"
+            :src="entry.picture" 
+            alt="entry-picture"
+            class="entry-picture">
 
-            <img 
-                v-if="localImage"
-                :src="localImage" 
-                alt="entry-picture"
-                class="img-thumbnail">
-            <textarea
-                v-model="entry.text"
-                placeholder="Descripción de la imagen"
-            ></textarea>
-        </div>
+        <img 
+            v-if="localImage"
+            :src="localImage" 
+            alt="entry-picture"
+            class="entry-picture">
+        <textarea
+            v-model="entry.text"
+            placeholder="Descripción de la imagen"
+        ></textarea>
 
 
 
@@ -196,18 +194,21 @@ export default {
 
 textarea {
     font-size: 20px;
-    border: none;
-    height: 100%;
+    width: 80%;
+    display: block;
+    margin: 32px auto;
+    padding: 0 15px;
 
     &:focus {
         outline: none;
     }
 }
 
-img {
+.entry-picture {
     display:block;
-    max-width: 100%;
-    height: auto;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 80vh;
     box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.2);
 }
 

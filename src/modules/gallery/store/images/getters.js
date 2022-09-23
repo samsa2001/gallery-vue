@@ -3,7 +3,7 @@
 //  return state
 // }
 
-export const getEntries = ( state ) => ( term = '' ) => {
+export const getEntries = ( state ) => ( ) => {
 
     return state.entries
 }

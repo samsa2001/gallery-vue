@@ -5,7 +5,7 @@
   >
     <div class="row">
       <!-- Titilo -->
-      <div class="entry-image col-3">
+      <div class="entry-image col-lg-3">
             <img 
                 v-if="entry.picture"
                 :src="entry.picture" 

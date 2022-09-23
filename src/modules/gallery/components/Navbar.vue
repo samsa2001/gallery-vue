@@ -1,11 +1,11 @@
 <template>
     <nav class="navbar bg-primary">
-        <a class="navbar-brand text-white">
+        <a class="navbar-brand text-white pointer"
+            @click="$router.push({ name: 'Home'})">
             <img src="@/assets/favicon.png" 
                  alt="Galeria de imagenes"
                  height="24"
-                 class="d-inline-block align-text-top mx-2"
-                @click="$router.push({ name: 'Home'})">
+                 class="d-inline-block align-text-top mx-2">
 
             Galería de imágenes
         </a>

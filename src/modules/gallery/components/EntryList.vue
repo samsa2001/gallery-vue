@@ -30,7 +30,6 @@
 <script>
 import { defineAsyncComponent } from 'vue'
 import { mapGetters } from 'vuex'
-
 export default {
   components: {
     Entry: defineAsyncComponent(() => import('./Entry.vue'))
@@ -38,13 +37,7 @@ export default {
   computed: {
     ...mapGetters('images', ['getEntries']),
     allEntries() {
-      if (this.isLoading) {return}
-      return this.getEntries( this.term )
-    }
-  },
-  data() {  
-    return {
-      term: ''
+      return this.getEntries()
     }
   }
 }

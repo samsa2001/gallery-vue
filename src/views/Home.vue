@@ -1,12 +1,18 @@
 <template>
   <div class="home ">
-
-    <h1>Galería de imágenes</h1>
-    <img alt="Vue logo" src="../assets/galeria.jpg">
-
-    <button @click="goToGallery" class="btn btn-primary">Galería</button>
-    <button @click="goToAbout" class="btn btn-info">About</button>
-    <button @click="goToNew" class="btn btn-success">Nueva imagen</button>
+    <div class="container">
+      <div class="d-flex flex-column  justify-content-center  text-center">
+        <div class=" align-self-center">
+        <h1>Galería de imágenes</h1>
+        <img alt="Vue logo" src="../assets/galeria.jpg" width="500">
+        <nav class="menu">
+          <button @click="goToGallery" class="btn btn-primary">Galería</button>
+          <button @click="goToAbout" class="btn btn-info">About</button>
+          <button @click="goToNew" class="btn btn-success">Nueva imagen</button>
+        </nav>
+      </div>
+      </div>
+    </div>
 
   </div>
 </template>
@@ -28,17 +34,18 @@ export default {
 }
 </script>
 <style  lang="scss" scoped>
-  .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 90vh;
-    justify-content: center;
-    > * {
-      max-width: 500px;
-    }
-    > button {
-      display: inline-block;
-    }
+.home {
+    background: url("../assets/4931029.jpg") ;
+    background-size: cover;
   }
+.container > .d-flex{
+    height: 100vh;
+    overflow: hidden;
+}
+h1 {
+  font-size: 3rem;
+}
+nav > * {
+  margin: 15px;
+}
 </style>
