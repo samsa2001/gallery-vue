@@ -42,9 +42,6 @@ export default {
     height: 100vh;
     overflow: hidden;
 }
-h1 {
-  font-size: 3rem;
-}
 nav > * {
   margin: 15px;
 }

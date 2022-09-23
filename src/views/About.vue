@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <aside class="col-lg-4 text-center">      
+    <aside class="col-lg-4 text-center order-1 order-lg-0">      
       <div class="d-flex flex-column  justify-content-center  text-center">
         <div class=" align-self-center">
         <h1>Galería de imágenes</h1>
@@ -9,7 +9,7 @@
       </div>
       </div>
     </aside>
-    <div class=" content col-lg-8">
+    <div class=" content col-lg-8 order-0 order-lg-1">
       <h1 class="text-center mb-4">App Galería Básica creada por Ramón Pons</h1>
       <p class="pt-4">Puede descargar el código de la App en <a href="https://github.com/samsa2001/gallery-vue" target="_blank">https://github.com/samsa2001/gallery-vue</a></p>
       <p class="mb-4">Puede ver la App en funcionamiento en <a href="https://galeria.mitziweb.com" target="_blank">https://galeria.mitziweb.com</a></p>
