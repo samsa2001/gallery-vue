@@ -3,12 +3,12 @@
     <div class="container">
       <div class="d-flex flex-column  justify-content-center  text-center">
         <div class=" align-self-center">
-        <h1>Galería de imágenes</h1>
-        <img alt="Vue logo" src="../assets/galeria.jpg" width="500">
+        <h1 @click="goToGallery">Galería de imágenes</h1>
+        <img @click="goToGallery" alt="Vue logo" src="../assets/galeria.jpg" width="500">
         <nav class="menu">
           <button @click="goToGallery" class="btn btn-primary">Galería</button>
-          <button @click="goToAbout" class="btn btn-info">About</button>
-          <button @click="goToNew" class="btn btn-success">Nueva imagen</button>
+          <button @click="this.$router.push({ name: 'entry', params: { id: 'new' } })" class="btn btn-primary">Nueva imagen</button>
+          <button @click="this.$router.push({ name: 'About' })" class="btn btn-primary">About</button>
         </nav>
       </div>
       </div>
@@ -23,13 +23,7 @@ export default {
   methods: {
     goToGallery() {
       this.$router.push({ name: 'no-entry' })
-    },
-    goToAbout(){
-      this.$router.push({ name: 'About' })
-    },
-    goToNew(){
-      this.$router.push({ name: 'entry', params: { id: 'new' } })
-    },
+    }
   }
 }
 </script>
