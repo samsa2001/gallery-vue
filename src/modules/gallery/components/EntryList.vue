@@ -19,7 +19,7 @@
 
       <div class="entry-scrollarea">
           <Entry
-            v-for="entry in entriesByTerm"
+            v-for="entry in allEntries"
             :key="entry.id"
             :entry="entry"
           />
@@ -36,9 +36,10 @@ export default {
     Entry: defineAsyncComponent(() => import('./Entry.vue'))
   },
   computed: {
-    ...mapGetters('images', ['getEntriesByTerm']),
-    entriesByTerm() {
-      return this.getEntriesByTerm( this.term )
+    ...mapGetters('images', ['getEntries']),
+    allEntries() {
+      if (this.isLoading) {return}
+      return this.getEntries( this.term )
     }
   },
   data() {  
