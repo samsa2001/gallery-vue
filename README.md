@@ -1,5 +1,7 @@
 # gallery
 
+Galería básica realizada en Vue.
+
 ### Compilación en local
 ```
 npm run serve
