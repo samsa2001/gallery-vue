@@ -1,12 +1,15 @@
 import { createStore } from 'vuex'
 
-export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+import images from '../modules/gallery/store/images'
+
+
+const store = createStore({
+    modules: {
+        images
+    }
 })
+
+
+
+
+export default store
