@@ -1,13 +1,5 @@
 <template>
   <div class="entry-list-container">
-      <div class="px-2 pt-2">
-          <input 
-            type="text"
-            class="form-control"
-            placeholder="Buscar entrada"
-            v-model="term"
-          />
-      </div>
 
       <div class="mt-2 d-flex flex-column">
         <button class="btn btn-success mx-3"
