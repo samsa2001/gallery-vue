@@ -90,6 +90,7 @@ export default {
 
     methods: {
         ...mapActions('images', ['updateEntry','createEntry','deleteEntry']),
+
         loadEntry() {
             
             let entry;
@@ -114,8 +115,13 @@ export default {
             Swal.showLoading()
 
             const picture = await uploadImage( this.file )
-            
-            this.entry.picture = picture
+            if (!picture) {
+                if (!this.entry.picture){
+                    this.entry.picture = "https://galeria.mitziweb.com/img/galeria.e57ee813.jpg"   
+                }             
+            } else {
+                this.entry.picture = picture
+            }
             
             if ( this.entry.id  ) {
                 // Actualizar
@@ -167,6 +173,7 @@ export default {
             const fr = new FileReader()
             fr.onload = () => this.localImage = fr.result
             fr.readAsDataURL( file )
+            
 
         },
         onSelectImage() {
